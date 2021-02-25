@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+iframe {
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img, video {
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+th {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.tabbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.tabbar a {
   color: white;
+  float: center;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.tabbar a:hover {
+  background-color: #111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active:link {
+    text-decoration: underline;
+    text-decoration-style: solid;
 }
+
+.pageinfo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-bottom: 60px;
+}
+
+.grid {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 20px;
+}
+
+.in_grid {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.in_overlay {
+    left: 50%;
+    max-height: 75%;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+
+/*Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
+#scroll {
+    background-color: #333;
+    border-width: 0px;
+    color: #ffffff;
+    display: none;
+    padding: 10px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#scroll:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+} 
